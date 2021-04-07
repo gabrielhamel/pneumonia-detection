@@ -29,6 +29,13 @@
     ```
 4) Open `notebooks/dataset.ipynb` notebook and run it completly. (~3min). After you must see a new file `dataset.hdf5` at the repository root
 
+## Use already train model
+> You must have enabled the virtual env (goto installation 2.)
+
+```
+python prgm/ui/main.py
+```
+
 ## Training
 
 1) Run completly `notebooks/cnn.ipynb` notebook to build a new model. You can save it on `model` folder (beware before).
