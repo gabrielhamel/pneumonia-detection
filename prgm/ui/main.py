@@ -22,7 +22,7 @@ while True:
         break
     if event == "uploaded_path":
         img = image.load_image(values['uploaded_path'])
-        matrix = image.image_to_matrix(img, 256)
+        matrix = image.image_to_matrix(img, 32)
         predictions = cnn.predict(tf.expand_dims(matrix, 0))
         score = tf.nn.softmax(predictions[0])
         result.update("This image most likely belongs to {} with a {:.2f} percent confidence.".format(class_names[np.argmax(score)], 100 * np.max(score)))
