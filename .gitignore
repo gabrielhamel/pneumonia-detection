@@ -4,3 +4,5 @@ chest_Xray
 dataset
 env
 dataset.hdf5
+*.pyc
+__pycache__
